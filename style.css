@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    height: 100vh;
+    color: rgb(122, 136, 40);
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('sky.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.body-filter {
+    height: 100vh;
+    background-color: rgba(0, 162, 255, 0.2);
+    overflow: auto;
+}
+
+#content {
+    padding: 2rem;
+    background-color: rgba(20, 114, 145, 0.1);
+    border-radius: 1em;
+}
+
+h1 {
+    font-family: "Rye", serif;
+}
+
+::placeholder {
+    color: white;
+}
+
+.fs-01 {
+    font-size: 28cqw;
+    font-weight: bold;
+}
+
+.main-box {
+    box-shadow: 0 0 0.5em white inset;
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 100%;
+    container-name: card-main;
+    container-type: inline-size;
+}
+
+.detail-box {
+    box-shadow: 0 0 0.5em white inset;
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 100%;
+}
+
+.weather-icon svg{
+    height: 5em;
+}
+
+.bg-dark-transparent {
+    background-color: rgb(40, 100, 136, 0.1);
+}
+
+.weather-group {
+    background-color: #9ae2fb;
+}
+
+.weather-icon-lg svg {
+    height: 10em;
+}
+
+#daily-info {
+    border-radius: 0.75rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    gap: 1rem;
+}
+
+.weather-group {
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 0.5em white inset;
+    border-radius: 1rem;
+    padding: 1em 2em;
+}
+
+/* to hide scrollbar */
+#daily-info {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+
+#daily-info::-webkit-scrollbar {
+    display: none;
+}
+/* --end to hide scrollbar */
+
+/* search */
+#search, #btn-search {
+    /* width: 100%; */
+    border: 2px solid rgba(255, 255, 255, 0.634);
+    background-color: transparent;
+    box-shadow: 0 0 0.5em rgba(255, 255, 255, 0.634) inset;
+    color: white;
+}
+
+#search:focus {
+    /* border-color: #286488; */
+    outline: none;
+    color: #286488;
+    box-shadow: 0 0 0 inset;
+}
+/* --end search */
+
+/* scroll button */
+.btn-scroll-group {
+    position: absolute;
+    height: 100%;
+}
+
+.btn-scroll {
+    border: 0;
+    display: inline;
+    padding: 1em 1em;
+    position: relative;
+    background-color: transparent;
+}
+
+.btn-scroll:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.btn-scroll-left {
+    left: 0;
+}
+
+.btn-scroll-right {
+    right: 0;
+}
+
+.btn-scroll svg {
+    height: 3em;
+    fill: black;
+}
+
+/* --end scroll button */
